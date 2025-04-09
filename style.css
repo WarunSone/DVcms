@@ -1,0 +1,67 @@
+body {
+    margin: 0px;
+    font-family: "kanit";
+}
+section {
+    height: 200vh;
+    display: grid;
+    place-items: center;
+}
+.container {
+	width: 100%;
+    margin: auto;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cbox {
+    text-align: center;
+    background-color: #F1EDEE;
+    color: #0f0f0f;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0 10px;
+    width: 110px;
+    height: 110px;
+    position: relative;
+    white-space: pre-line;
+}
+.cbox img {
+	position: absolute;
+    height: 40%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.cbox h2 {
+	font-size: 24px;
+    letter-spacing: 2px;
+	position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.cbox p {
+	font-size: 10px;
+    text-transform: uppercase;
+    line-height: 100%;
+    letter-spacing: 1px;
+	position: absolute;
+    top:67%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+@media (max-width: 768px) {
+    body {
+      font-size: 2em;
+      letter-spacing: 2em;
+    }
+  }
+
+@media (max-width: 480px) {
+    body {
+      font-size: 1em;
+      letter-spacing: 1em;
+    }
+  }
