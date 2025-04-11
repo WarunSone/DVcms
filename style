@@ -1,0 +1,82 @@
+.container {
+				width: 100%;
+				margin: auto;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+}
+.cbox {
+				font-family: "kanit";
+				text-align: center;
+				background-color: #F1EDEE;
+				color: #0f0f0f;
+ 				border-radius: 20px;
+				padding: 5px;
+				margin: 0 10px;
+				width: 110px;
+				aspect-ratio: 1 / 1;
+				position: relative;
+				white-space: pre-line;
+}
+.cbox img {
+				position: absolute;
+				height: 40%;
+				aspect-ratio: 1 / 1;
+				top: 30%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+}
+.cbox h2 {
+				font-size: 22px;
+				letter-spacing: 2px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-52%);
+			}
+.cbox p {
+				font-size: 11px;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				line-height: 90%;
+				position: absolute;
+				left: 50%;
+				transform: translate(-50%);
+}
+
+@media (max-width: 768px) {
+				.cbox {
+					width: 30%;
+					padding: 2px;
+					border-radius: 15px;
+				}
+				.cbox img {
+					height: 50%;
+				}
+				.cbox h2 {
+					font-size: 1.4em;
+				}
+				.cbox p {
+					font-size: 80%;
+					letter-spacing: 0px;
+				}
+}
+
+@media (max-width: 480px) {
+				.cbox {
+					margin: 0 5px;
+					width: 25%;
+					padding: 0px;
+					border-radius: 15px;
+				}
+				.cbox img {
+					height: 40%;
+				}
+				.cbox h2 {
+					font-size: 1.2em;
+				}
+				.cbox p {
+					font-size: 70%;
+					letter-spacing: 0.5px;
+				}
+}
